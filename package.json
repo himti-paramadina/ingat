@@ -1,0 +1,31 @@
+{
+  "name": "pems",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/himti-paramadina/pems.git"
+  },
+  "keywords": [
+    "Event"
+  ],
+  "author": [
+    "Full Name <email>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/himti-paramadina/pems/issues"
+  },
+  "homepage": "https://github.com/himti-paramadina/pems",
+  "dependencies": {
+    "body-parser": "^1.9.3",
+    "express": "^4.10.4",
+    "jade": "^1.8.0",
+    "morgan": "^1.5.0",
+    "mysql": "^2.5.3"
+  }
+}
