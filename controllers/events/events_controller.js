@@ -19,11 +19,27 @@ var init = function(connector) {
 		}
 	};
 
-	actions.detail = {
-		path 	: '/:EventId',
+	actions.add = {
+		path	: '/add',
 		method	: 'get',
 		handler	: function(req, res, next) {
+			res.render('add', {
+				title: "Add New Event"
+			});
+		}
+	};
 
+	actions.detail = {
+		path 	: '/:eventId',
+		method	: 'get',
+		handler	: function(req, res, next) {
+			var sql = "SELECT * FROM events WHERE id_event = " + req.params.eventId + ";";
+			connector.query(sql, function(err, result) {
+				res.render('detail', {
+					title: result[0].name,
+					event: result[0]
+				});
+			});
 		}
 	};
 	//API Function
