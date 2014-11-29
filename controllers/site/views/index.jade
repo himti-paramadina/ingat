@@ -1,0 +1,14 @@
+extends ../../../views/layouts/default
+
+block content
+	.container
+		.row
+			.col-md-12
+				.page-header
+					h1 Upcoming Events
+
+		.row 
+			each event in events
+				.col-md-4
+					h1 #{event.name}
+					a.btn.btn-success.btn-block(href='#') Read More
