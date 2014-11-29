@@ -14,7 +14,7 @@ var init = function(connector) {
 		handler : function(req, res, next)
 		{
 			res.render('index', {
-				title: Event Index
+				title: "Event Index"
 			});
 		}
 	};
@@ -25,7 +25,7 @@ var init = function(connector) {
 		handler	: function(req, res, next) {
 
 		}
-	}:
+	};
 	//API Function
 
 	actions.api_index = {

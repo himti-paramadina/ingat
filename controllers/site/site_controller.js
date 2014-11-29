@@ -12,7 +12,7 @@ var init = function(connector){
 					throw err;
 				}
 
-				res.render('index',){
+				res.render('index',{
 					title: "Home",
 					events: results
 				});
