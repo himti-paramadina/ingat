@@ -3,6 +3,14 @@ var init = function(connector) {
 
 	actions.name = 'organizations';
 
+	actions.add_organization = {
+		path	: '/add',
+		method	: 'post',
+		handler	: function(req, res, next) {
+			
+		}
+	}
+
 	actions.detail = {
 		path: '/:organization_id',
 		method: 'get',
