@@ -23,7 +23,7 @@ var init = function(connector) {
 		path	: '/add',
 		method	: 'get',
 		handler	: function(req, res, next) {
-			res.render('add', {
+			res.render('add', { // (render)untuk tampilan
 				title: "Add New Event"
 			});
 		}
